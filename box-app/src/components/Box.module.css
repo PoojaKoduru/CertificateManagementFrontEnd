@@ -1,0 +1,27 @@
+.box{
+    background-color: bisque;
+    width: 30%;
+    height: 20vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    box-shadow: 3px 3px grey;
+
+}
+
+h2{
+    text-align: center;
+    text-shadow: 1px 1px grey;
+}
+
+.btn{
+    background-color: lightsteelblue;
+    font-size: medium;
+    margin-top: 4vh;
+    margin-left: 35%;
+    border-radius: 5px;    
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+}

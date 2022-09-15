@@ -1,0 +1,31 @@
+.btn{
+    background-color: brown;
+    color: white;
+    font-size: medium;
+    margin-top: 4vh;
+    margin-left: 35%;
+    border-radius: 5px;    
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.modal{
+    box-shadow: 2px 3px gray;
+    border-radius: 5px;
+    background-color:azure;
+    padding: 1rem;
+    text-align: center;
+    width: 30rem;
+    z-index: 10;
+    position: fixed;
+    top: 20vh;
+    left: 40%;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
