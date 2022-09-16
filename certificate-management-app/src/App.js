@@ -110,25 +110,42 @@ class App extends Component {
           <Navbar
             style={{
               backgroundColor: "#2C2C8B",
-              fontSize: "1.5em",
-
-              height: "5rem",
-              padding: "2rem",
-              marginBottom: "3rem",
             }}
             collapseOnSelect
             expand='lg'
             // bg='#2C2C8B'
             variant='dark'
-            className="navbar-responsive" >
+            className='navbar-responsive textsize mb-5 p-3 '
+          >
             <Container>
               {/* https://www.edigitalagency.com.au/wp-content/uploads/telstra-logo-purple-background-800x800.png */}
-              <img src="https://www.edigitalagency.com.au/wp-content/uploads/telstra-logo-purple-background-800x800.png" style={{maxWidth: "80px", maxHeight: "80px" , paddingRight: "20px"}} className="img-fluid" alt="Responsive image"></img>
+              {/* <img
+                src='https://www.edigitalagency.com.au/wp-content/uploads/telstra-logo-purple-background-800x800.png'
+                style={{
+                  maxWidth: "80px",
+                  maxHeight: "80px",
+                  paddingRight: "20px",
+                }}
+                className='img-fluid'
+                alt='Responsive image'
+              ></img> */}
+              <Navbar.Brand href='#home'>
+                <img
+                  alt=''
+                  src='https://www.edigitalagency.com.au/wp-content/uploads/telstra-logo-purple-background-800x800.png'
+                  width='60'
+                  height='55'
+                  className='d-inline-block align-top'
+                />
+              </Navbar.Brand>
               <Navbar.Brand
                 href='/'
-                style={{ fontSize: "1.5em", fontWeight: "bold" , paddingRight: "90px"}}
+                style={{
+                  fontSize: "1.5em",
+                  fontWeight: "bold",
+                  paddingRight: "90px",
+                }}
               >
-                
                 Telstra
               </Navbar.Brand>
 
@@ -136,11 +153,21 @@ class App extends Component {
               <Navbar.Collapse id='responsive-navbar-nav'>
                 {currentUser ? (
                   <Nav className='me-auto'>
-                    <Nav.Link href='/'>Home</Nav.Link>
-                    <Nav.Link href='/generate'>Generate</Nav.Link>
-                    <Nav.Link href='/validate'>Validate</Nav.Link>
-                    <Nav.Link href='/download'>Download</Nav.Link>
-                    <Nav.Link href='/renew'>Renew</Nav.Link>
+                    <Nav.Link href='/'>
+                      <h4>Home</h4>
+                    </Nav.Link>
+                    <Nav.Link href='/generate'>
+                      <h4>Generate</h4>
+                    </Nav.Link>
+                    <Nav.Link href='/validate'>
+                      <h4>Validate</h4>
+                    </Nav.Link>
+                    <Nav.Link href='/download'>
+                      <h4>Download</h4>
+                    </Nav.Link>
+                    <Nav.Link href='/renew'>
+                      <h4>Renew</h4>
+                    </Nav.Link>
                   </Nav>
                 ) : null}
                 {/* <Nav className='me-auto'>
@@ -157,9 +184,11 @@ class App extends Component {
                   id='responsive-navbar-nav'
                 >
                   <Nav>
-                    <Nav.Link href='/profile'>Profile</Nav.Link>
+                    <Nav.Link href='/profile'>
+                      <h4>Profile</h4>
+                    </Nav.Link>
                     <Nav.Link href='/login' onClick={this.logOut}>
-                      Logout
+                      <h4>Logout</h4>
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
@@ -169,9 +198,11 @@ class App extends Component {
                   id='responsive-navbar-nav'
                 >
                   <Nav>
-                    <Nav.Link href='/login'>Login</Nav.Link>
+                    <Nav.Link href='/login'>
+                      <h4>Login</h4>
+                    </Nav.Link>
                     <Nav.Link href='/register' className='nav-link'>
-                      Sign Up
+                      <h4>Sign Up</h4>
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
