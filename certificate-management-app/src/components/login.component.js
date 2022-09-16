@@ -58,7 +58,7 @@ class Login extends Component {
     if (this.checkBtn.context._errors.length === 0) {
       dispatch(login(this.state.username, this.state.password))
         .then(() => {
-          history.push("/profile");
+          history.push("/");
           window.location.reload();
         })
         .catch(() => {
@@ -81,7 +81,7 @@ class Login extends Component {
     }
 
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 offset-md-3">
         <div className="card bg-light text-dark">
           <h1><center>Login</center></h1>
 
